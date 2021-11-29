@@ -1,9 +1,12 @@
 #!/bin/bash
-#************************************************************************
-# https://github.com/Entwicklungsleiter/who_needs_a_document_management *
-# main bash script to run the process of importing document photos      *
-# into pdf files and make them searchable			                    *
-#************************************************************************
+
+#*******************************************************************
+# main bash script to run the process of importing document photos *
+# into pdf files and make them searchable			               *
+#*******************************************************************
+
+	echo "nextcloud based document management system 0.1alpha"
+	echo "https://github.com/Entwicklungsleiter/nextcloud_based_document_management"
 
 #*************
 # configure: *
@@ -21,13 +24,6 @@
 #********************
 # run main process: *
 #********************
-
-	if [ "0" == $(ls $PHOTO_FILES_TO_IMPORT 2> /dev/null | wc -l)  ]; then
-		echo 
-		echo "=> Error: Did not find files like "$PHOTO_FILES_TO_IMPORT" - Aborting process." | tee --append $LOGFILE
-		source $THIS_FILES_FULL_PATH/bin/final_cleanup.sh
-		exit 0
-	fi
 
 	source $THIS_FILES_FULL_PATH/bin/ocr_and_pdf_generation_process.sh
 

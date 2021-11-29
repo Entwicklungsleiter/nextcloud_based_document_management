@@ -1,12 +1,8 @@
 #!/bin/bash
-#************************************************************************
-# https://github.com/Entwicklungsleiter/who_needs_a_document_management *
-# main configuration file          	                                    *
-#************************************************************************
 
-#*************
-# configure: *
-#*************
+#**************************
+# main configuration file *
+#**************************
 
 	PHOTO_FILES_TO_IMPORT="/home/eltern/Nextcloud/Share/Dokumente/Import/*.jpg"
 	DOCUMENT_MANAGEMENT_TARGET_FOLDER="/home/eltern/Nextcloud/Share/Dokumente/"$(date +%Y)

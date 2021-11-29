@@ -1,13 +1,16 @@
 #!/bin/bash
-#************************************************************************
-# https://github.com/Entwicklungsleiter/who_needs_a_document_management *
-# checking for all folders required and                                 *
-# external binaries being available			                            *
-#************************************************************************
+
+#****************************************
+# checking for all folders required and *
+# external binaries being available		*
+#****************************************
 
 #***********************************
 # check if required folders exist: *
 #***********************************
+
+	echo
+	echo "# runninig pre-process to check dependencies #" | tee --append $LOGFILE
 
 	# build a temporary working directory
 	if [ ! -d $WORKDIR ]; then
