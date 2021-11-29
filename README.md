@@ -39,8 +39,8 @@ The state so far:
 
  - does not (and is not planned to) interact with a scanner or scanning software, but wants the user to just take a photo with a modern mobile device and sync it to the folder structure of this system (by using a private cloud service like Nextcloud).
  - does still not optimize images clever, but requires a good taken photo of a mobile device. Until this feature is ready I recommend modern mobile devices having a "scan" function in devices camera app.
- - automatically runs image resizing to minimize size of the result PDF file.
- - automatically runs OCR software _tesseract_ to create PDF files with overlay text areas to make the PDF content searchable.
+ - automatically runs image resizing with [imagemagick](https://wiki.ubuntuusers.de/ImageMagick/) to minimize size of the result PDF file.
+ - automatically runs OCR software [tesseract](https://wiki.ubuntuusers.de/tesseract-ocr/) to create PDF files with overlay text areas to make the PDF content searchable.
  - does still not identify key words to optimize PDF file searchability with tags and optimized file names.
  - does still not interact with any cloud service (but runs in my local installation inside the folder structure synchronized by Nextcloud).
 
