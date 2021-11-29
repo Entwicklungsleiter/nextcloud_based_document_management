@@ -1,0 +1,15 @@
+
+Prio 1 changes:
+ - check for required dependencies: imagemagick, tesseract
+ - add functionality to find to 3 keywords in document text
+   => add top 3 keywords to filename
+ - change date format in PDF filename
+
+Prio 2 changes:
+ - add functionality to pre-optimize images (edit) before importing
+   => cut edges, optimize contrast, eventually make grayscale
+ - add a warning if "done" folder gets "too large"
+
+Do I want that?
+ - make Nextcloud an "external provider"
+ - 
